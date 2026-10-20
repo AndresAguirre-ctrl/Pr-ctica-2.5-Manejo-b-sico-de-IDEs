@@ -1,8 +1,21 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hola mundo!"));
-    IO.println(String.format("Este es mi primer proyecto"));
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Main
+        extends JFrame {
+
+    public Main() {
+        JLabel lblSaludo = new JLabel("Hola Mundo. Creando mi primer proyecto");
+        add(lblSaludo);
+
+        this.setSize(200,200);
+        this.setTitle("Andrés Aguirre");
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        Main main = new Main();
+    }
 }
